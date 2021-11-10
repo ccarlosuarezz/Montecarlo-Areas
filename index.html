@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="area.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Montecarlo Areas</title>
+</head>
+<body>
+    <h1>Montecarlo - Areas bajo la curva</h1>
+    <div class="form_container">
+        <div class="functions_select">
+            <input type="radio" name="function" id=""><img src="functionOne.png" alt="">
+            <input type="radio" name="function" id=""><img src="functionTwo.png" alt="">
+            <input type="radio" name="function" id=""><img src="functionThree.png" alt="">
+        </div>
+        <div class="form">
+            <input type="number" name="lower_limit_value" id="input_lower_limit" autocomplete="off" required/>
+            <label for="lower_limit_value" class="label_input">
+                <span class="content_input">Limite inferior</span>
+            </label>
+        </div>
+        <div class="form">
+            <input type="number" name="upper_limit_value" id="input_upper_limit" autocomplete="off" required/>
+            <label for="upper_limit_value" class="label_input">
+                <span class="content_input">Limite superior</span>
+            </label>
+        </div>
+        <div class="form">
+            <input type="number" name="iterations_value" id="input_iterations" autocomplete="off" required/>
+            <label for="iterations_value" class="label_input">
+                <span class="content_input">Iteraciones</span>
+            </label>
+        </div>
+        <button id="button" class="generate_button">
+            <strong>Calcular</strong>
+        </button>
+    </div>
+    <p id="estimated_value" class="result"><strong>Valor estimado: 0</strong></p>
+    <script src="montecarlo-areas.js"></script>
+</body>
+</html>
