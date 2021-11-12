@@ -114,10 +114,10 @@ function functionThree() {
         fx = curveOne(x);
         gx = curveTwo(x);
         hx = curveThree(x);
-        if (y <= fx && y >= gx && y <= hx) {
+        if (y <= fx && y >= hx) {
             pointsInsideAreaOne++;
         }
-        if (y <= fx && y >= gx && y >= hx) {
+        if (y <= fx && y >= gx && y <= hx) {
             pointsInsideAreaTwo++;
         }
     }
