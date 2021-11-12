@@ -9,13 +9,13 @@
     <title>Montecarlo Areas</title>
 </head>
 <body>
-    <h1>Montecarlo - Areas bajo la curva</h1>
+    <h1>Montecarlo - Áreas bajo la curva</h1>
+    <div class="functions_select">
+        <input type="radio" name="function" id="f1"><img src="functionOne.png" alt="">
+        <input type="radio" name="function" id="f2"><img src="functionTwo.png" alt="">
+        <input type="radio" name="function" id="f3"><img src="functionThree.png" alt="">
+    </div>
     <div class="form_container">
-        <div class="functions_select">
-            <input type="radio" name="function" id=""><img src="functionOne.png" alt="">
-            <input type="radio" name="function" id=""><img src="functionTwo.png" alt="">
-            <input type="radio" name="function" id=""><img src="functionThree.png" alt="">
-        </div>
         <div class="form">
             <input type="number" name="lower_limit_value" id="input_lower_limit" autocomplete="off" required/>
             <label for="lower_limit_value" class="label_input">
@@ -34,11 +34,12 @@
                 <span class="content_input">Iteraciones</span>
             </label>
         </div>
-        <button id="button" class="generate_button">
-            <strong>Calcular</strong>
-        </button>
     </div>
-    <p id="estimated_value" class="result"><strong>Valor estimado: 0</strong></p>
+    <button id="button" class="generate_button">
+        <strong>Calcular</strong>
+    </button>
+    <div id="results"></div>
+    <!-- <p id="estimated_value" class="result"><strong>Valor estimado: 0</strong></p> -->
     <script src="montecarlo-areas.js"></script>
 </body>
 </html>
