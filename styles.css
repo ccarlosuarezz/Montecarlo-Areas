@@ -12,6 +12,7 @@ body {
     align-items: center;
     row-gap: 20px;
     font-family: sans-serif;
+    font-size: 16px;
 }
 
 .functions_select {
